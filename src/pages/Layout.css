@@ -1,0 +1,58 @@
+/* Layout.css */
+
+/* General Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky; /* Keeps the navbar at the top when scrolling */
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px; /* Add spacing between links */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effects */
+  nav ul li a:hover {
+    color: #1e90ff; /* Change the link color on hover */
+  }
+  
+  /* Active Link (Optional) */
+  nav ul li a.active {
+    border-bottom: 2px solid #1e90ff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  

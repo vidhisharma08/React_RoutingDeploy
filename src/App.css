@@ -1,0 +1,69 @@
+/* General Container */
+#root {
+  width: 100%;
+  margin: 0 auto;
+ 
+  background-color: #f9f9f9;
+}
+
+/* Logo Styling */
+.logo {
+  height: 6em;
+  margin: 0 auto;
+  display: block;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms, transform 300ms ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for spinning logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card Style */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  margin: 1em 0;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Read the Docs Link */
+.read-the-docs {
+  color: #888;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.read-the-docs:hover {
+  color: #555;
+  text-decoration: underline;
+}
